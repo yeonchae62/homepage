@@ -1,0 +1,30 @@
+.h3 {
+    font-size:10rem;
+}
+.metamaterial__content h3{
+    margin-bottom: 1.5rem;
+    font-size: 3rem;
+    color: #1a1a1a;    
+}
+
+.Date{    
+    font-size: 1.7rem;    
+    color: #1a1a1a;
+    font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.info {
+    font-weight: bolder;
+    margin-top: 1.5rem;
+}
+.metamaterial__container{
+    width: 60%;    
+    gap: 5rem;
+}
+
+.metamaterial__container p{
+    font-size:1.6rem;
+    font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
+    gap: 2rem;
+}
+

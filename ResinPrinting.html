@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- Reference  -->
+<!-- https://www.youtube.com/watch?v=QtOzUABE1Z4&t=1063s (Mr. Web Designer) -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Fabrication Studio</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/metamaterial.css">
+
+</head>
+<body>
+
+<div id="menu-bars" class="fas fa-bars"></div>
+<header>
+
+    <a href="index.html" class="logo"> Jung Hoon Seo </a>        
+    <nav class="navbar">    
+      <a href="index.html" class="main" style="font-size:2.3rem; font-weight: bold;">Project Lists</a>
+      <a href="MetaMaterial.html">MetaMaterial Mechanisms</a>
+      <a href="3DModeling.html">3D Modeling</a>
+      <a href="hair.html">3D Printed Hair</a>
+      <a href="kerfMechanism.html">Kerf Mechanism</a>
+      <a href="Xbridge.html">X-bridge</a>
+      <a href="ResinPrinting.html" style="color:#FF585D;">Resin Printing</a>
+      <a href="EnergyHarvester.html">Energy Harvester</a>
+    </nav>
+
+    <div class="follow">
+        <a href="#" class="fab fa-facebook-f" style="color:white;"></a>
+        <a href="#" class="fab fa-github" style="color:#FF585D;"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="https://www.linkedin.com/in/jung-hoon-seo-5ab813178/" class="fab fa-linkedin" style="color:#FF585D;"></a>
+        <p>&copy; All rights reserved</p>
+    </div>
+
+</header>
+
+<section class= 'portfolio' id='portfolio'>
+<div class="container metamaterial__container">
+    <!-- <h3> Metamaterial <span> Mechanisms </span> </h3> -->
+    <div class="metamaterial__content">
+        <h3> Resin <span> Printing </span> </h3>
+    </div>
+    <div class="Date">
+        <h3>August 29, 2023</h3>
+    </div>    
+    <p class="text">
+      Numerous 3D printing techniques are available for adaptation. DLP printers employ a light projector to simultaneously project the image of an entire layer, irrespective of the quantity of parts involved. LCD printers utilize a screen to project the complete image of an entire layer in a single step. In traditional laser printers, a focused beam of high-intensity light is employed to precisely draw each layer.
+      In this project, we are using the LCD printer to produce the chess queen model below.
+</p>
+    <div class="image">
+        <img src="https://github.com/jseo0917/jseo0917.github.io/blob/main/images/Resin_1.jpg?raw=true" alt="">
+    </div>
+    <p class="text">Reference: <a href="https://www.youtube.com/watch?si=fLreRUQzDJZlXDUy&v=A3wwHr_3S0o&feature=youtu.be" target="_blank">Tech Breakdown: SLA vs. DLP vs. LCD From Emory's Document</a></p>
+    <p class="info">Design</p>
+    <p class="text">To construct this project, we employ a software called ChituBox, with resin being the primary material. To print the model, we begin by loading our STL file onto ChituBox and adjusting the settings accordingly.
+    </p>
+    <div class="image">
+        <img src="https://github.com/jseo0917/jseo0917.github.io/blob/main/images/Resin_2.png?raw=true" alt="">
+        <img src="https://github.com/jseo0917/jseo0917.github.io/blob/main/images/Resin_3.png?raw=true" alt="">
+    </div>
+    <p class="text">Additionally, the LCD printer prints the model upside down, necessitating the configuration of proper supports; without them, successful printing may not be achieved. The image on the right side is an example of a model that requires a support structure.</p>
+    <div class="image">
+        <img src="https://github.com/jseo0917/jseo0917.github.io/blob/main/images/Resin_4.png?raw=true" alt="">
+        <img src="https://github.com/jseo0917/jseo0917.github.io/blob/main/images/Resin_5.png?raw=true" alt="">
+    </div>
+    <p class="info">Result</p>
+    <div class="image">
+        <p class="text">This is the printed model, and it's apparent that it was produced in an inverted orientation. The image on the right showcases the outcome printed by the LCD printer.</p>
+        <img src="https://github.com/jseo0917/jseo0917.github.io/blob/main/images/Resin_6.png?raw=true" alt="">
+        <img src="https://github.com/jseo0917/jseo0917.github.io/blob/main/images/Resin_7.png?raw=true" alt="">
+    </div>      
+
+</div>
+
+</section>
+<script src="js/script.js"></script>
+
+</body>
+</html>

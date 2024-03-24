@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- Reference  -->
+<!-- https://www.youtube.com/watch?v=QtOzUABE1Z4&t=1063s (Mr. Web Designer) -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Fabrication Studio</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/metamaterial.css">
+
+</head>
+<body>
+
+<div id="menu-bars" class="fas fa-bars"></div>
+<header>
+
+    <a href="index.html" class="logo"> Jung Hoon Seo </a>      
+    <nav class="navbar">    
+      <a href="index.html" class="main" style="font-size:2.3rem; font-weight: bold;">Project Lists</a>
+      <a href="MetaMaterial.html">MetaMaterial Mechanisms</a>
+      <a href="3DModeling.html">3D Modeling</a>
+      <a href="hair.html">3D Printed Hair</a>
+      <a href="kerfMechanism.html">Kerf Mechanism</a>
+      <a href="Xbridge.html">X-bridge</a>
+      <a href="ResinPrinting.html">Resin Printing</a>
+      <a href="EnergyHarvester.html" style="color:#FF585D;">Energy Harvester</a>
+    </nav>
+
+    <div class="follow">
+        <a href="#" class="fab fa-facebook-f" style="color:white;"></a>
+        <a href="#" class="fab fa-github" style="color:#FF585D;"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="https://www.linkedin.com/in/jung-hoon-seo-5ab813178/" class="fab fa-linkedin" style="color:#FF585D;"></a>
+        <p>&copy; All rights reserved</p>
+    </div>
+
+</header>
+
+<section class= 'portfolio' id='portfolio'>
+<div class="container metamaterial__container">
+    <!-- <h3> Metamaterial <span> Mechanisms </span> </h3> -->
+    <div class="metamaterial__content">
+        <h3><span>Energy </span>Harvester</h3>
+    </div>
+    <div class="Date">
+        <h3>August 29, 2023</h3>
+    </div>
+    <p class="info">Description</p>
+    <p class="text">
+        Ubiquitous computing has woven itself into the fabric of our daily existence, seamlessly integrating with smart home appliances, mobile devices, and wearables. Despite the prevalence of replaceable or rechargeable batteries powering most of these devices, lingering environmental concerns remain, with unresolved issues casting shadows on the future. In response to these apprehensions, the paper <a href="https://www.sciencedirect.com/science/article/pii/S0306261919316745" target="_blank">High-performance Cycloid Inspired Wearable Electromagnetic Energy Harvester for Scavenging Human Motion Energy </a> introduces an inventive paradigm for energy generation, negating the reliance on conventional batteries. This pioneering approach involves harnessing energy from human motion, subsequently employed to replenish power in devices like stopwatches and various commercial watches. In our upcoming project, we plan to adopt and implement this methodology for a novel application.
+    </p>
+    
+    <p class="info">Design</p>
+    <p class="info" style="margin-bottom:1rem">1. Designing Cycloid Structure</p>
+    <p class="text">We have chosen to adopt the cycloid structure for the following reasons. Based on the Brachistochrone curve experiment as described in the paper, it has been observed that the cycloid structure outperforms circular or straight shapes in facilitating the fastest speed when rolling a ball from the top to the bottom, meaning it can produce the highest energy.
+        We opted to print it with an arc length of 96mm and a diameter of 10mm, considering that the magnets have an 8mm diameter.
+    </a>
+    </p>
+    <p class="info" style="margin-bottom:1rem">3-D Design with Fusion 360</p>
+    <div class="image">
+        <img src="https://github.com/jseo0917/jseo0917.github.io/blob/main/images/har_2.png?raw=true" alt="">
+    </div>
+    <p class="info" style="margin-bottom:1rem">Printed Result</p>
+    <div class="image">
+        <img src="https://github.com/jseo0917/jseo0917.github.io/blob/main/images/har_3.png?raw=true" alt="">
+    </div>
+
+    <p class="info">How the energy is generated?</p>
+    <p class="text">
+        After obtaining the printed cycloid structure, you can wrap the structure with a copper coil. When you place a magnetic ball inside the cycloid structure, it will traverse through the portion of the copper coil, generating energy as it moves in both directions, A and B.
+    </p>
+    <div class="image">
+        <img src="https://github.com/jseo0917/jseo0917.github.io/blob/main/images/har_4.png?raw=true" alt="">
+    </div>
+    <div class="image">
+        <img src="https://github.com/jseo0917/jseo0917.github.io/blob/main/images/har_5.jpeg?raw=true" alt="">
+    </div>
+
+    <p class="info">Result</p>
+    
+
+</div>
+
+</section>
+<script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- Reference  -->
+<!-- https://www.youtube.com/watch?v=QtOzUABE1Z4&t=1063s (Mr. Web Designer) -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Fabrication Studio</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/metamaterial.css">
+
+</head>
+<body>
+
+<div id="menu-bars" class="fas fa-bars"></div>
+<header>
+
+    <a href="index.html" class="logo"> Jung Hoon Seo </a>     
+    <nav class="navbar">    
+      <a href="index.html" class="main" style="font-size:2.3rem; font-weight: bold;">Project Lists</a>
+      <a href="MetaMaterial.html">MetaMaterial Mechanisms</a>
+      <a href="3DModeling.html">3D Modeling</a>
+      <a href="hair.html">3D Printed Hair</a>
+      <a href="kerfMechanism.html">Kerf Mechanism</a>
+      <a href="Xbridge.html" style="color:#FF585D;">X-bridge</a>
+      <a href="ResinPrinting.html">Resin Printing</a>
+      <a href="EnergyHarvester.html">Energy Harvester</a>
+    </nav>
+
+    <div class="follow">
+        <a href="#" class="fab fa-facebook-f" style="color:white;"></a>
+        <a href="#" class="fab fa-github" style="color:#FF585D;"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="https://www.linkedin.com/in/jung-hoon-seo-5ab813178/" class="fab fa-linkedin" style="color:#FF585D;"></a>
+        <p>&copy; All rights reserved</p>
+    </div>
+
+</header>
+
+<section class= 'portfolio' id='portfolio'>
+<div class="container metamaterial__container">
+    <!-- <h3> Metamaterial <span> Mechanisms </span> </h3> -->
+    <div class="metamaterial__content">
+        <h3> X-<span>Bridge</span> </h3>
+    </div>
+    <div class="Date">
+        <h3>August 29, 2023</h3>
+    </div>    
+    <p class="text">
+   X-Bridge, a software developed by <a href="https://dl.acm.org/doi/10.1145/3526113.3545710" target="_blank">Sum at el.</a>
+    empowers novice users to craft customizable bridges capable of enhancing the deformable and physical characteristics of 3D printed objects.
+   By constructing a bridge-like structure, it can undergo various shape alterations without the need for additional post-processing, assembly, or support prerequisites.
+   The images below illustrate how the application of the bridge structure can influence the movement of the objects.</p>
+
+   <div class="image" style= margin-bottom:20px>
+       <img src="https://github.com/jseo0917/jseo0917.github.io/blob/main/images/xb_1.png?raw=true" alt="">
+       <img src="https://github.com/jseo0917/jseo0917.github.io/blob/main/images/xb_2.png?raw=true" alt="">
+       <p>Reference: <a href="https://dl.acm.org/doi/10.1145/3526113.3545710">X-Bridges: Designing Tunable Bridges to Enrich 3D Printed Objects' Deformation and Stiffness</a></p>
+   </div>
+   <p class="info">Design</p>
+   <p class="text">
+     In this project, we endeavored to replicate bridge-like objects in order to achieve the bending of the objects using Fusion 360.</p>
+   <div class="image">
+       <img src="https://github.com/jseo0917/jseo0917.github.io/blob/main/images/xb_3.png?raw=true" alt="">
+       <img src="https://github.com/jseo0917/jseo0917.github.io/blob/main/images/xb_4.png?raw=true" alt="">
+   </div>
+
+   <p class="info">Result</p>
+   <p class="text">While the shapes resemble those presented in the paper, the bridges proved to be too weak, possibly due to excessive density.
+     Consequently, they were unable to withstand bending. In certain edge cases, a minimal extrusion amount resulted in a weakened bridge structure.</p>
+   <div class="image">
+       <img src="https://github.com/jseo0917/jseo0917.github.io/blob/main/images/xb_5.png?raw=true" alt="">
+       <img src="https://github.com/jseo0917/jseo0917.github.io/blob/main/images/xb_6.png?raw=true" alt="">
+   </div>
+   <p class="info">Future Work</p>
+   <p class="text">We may need to consider extrusion rate and printing speed for the future work so that the bridges are strong and flexible enought to enable bending.</p>
+
+</div>
+
+</section>
+<script src="js/script.js"></script>
+
+</body>
+</html>
