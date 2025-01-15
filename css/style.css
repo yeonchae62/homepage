@@ -1,330 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
-
-
-:root{
-    --main-color:#ffffff;
-    --color-bg:#f9f9f9;
-    --color-bg-variant: #e6e6e6;
-    --color-primary: #475D7A;
-    --color-primary-variant: rgba(77, 181, 255, 0.4);
-    --color-white: #fff;
-    --color-black: #1a1a1a;
-    --color-light: rgba(87, 79, 79, 0.6);
-
-    --container-width-lg: 75%;
-    --container-width-md: 86%;
-    --container-width-sm: 90%;
-
-    --transition: all 400ms ease;
+element.style {
 }
-
-*{
-    font-family: 'Roboto', sans-serif;
-    margin:0; padding:0;
-    box-sizing: border-box;
-    outline: none; border:none;
-    text-decoration: none;
-
-    transition: all .2s linear;
-    line-height: 1.5;
-}
-
-html{
-    font-size: 62.5%;
+body {
+    font-family: 'Inter', sans-serif;
     overflow-x: hidden;
-    scroll-behavior: smooth;
+    background-color: #FFF;
+    font-weight: 400;
+    font-style: normal;
+    color: #373737;
+    font-size: 15px;
+}
+body {
+    margin: 0;
+    font-family: var(--bs-font-sans-serif);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
 }
 
-body{
-    background: #f9f9f9;
-    padding-left: 30rem;
+*, ::after, ::before {
+    box-sizing: border-box;
 }
-
-section{
-    padding:1rem 5%;
-    min-height: 100vh;
-}
-
-.heading{
-    font-size: 3rem;
-    padding-bottom: 1rem;
-    color:#111;
-
-}
-
-.heading span{
-    font-size: 3rem;
-    color:var(--main-color);
-}
-
-.btn{
-    display: inline-block;
-    margin-top: 1rem;
-    padding:.8rem 3rem;
-    background: #475D7A;
-    color:#fff;
-    cursor: pointer;
-    font-size: 1.7rem;
-}
-
-.btn:hover{
-    background:#111;
-    letter-spacing: .2rem;
-}
-
-header{
-    position: fixed;
-    top:0; left:0; bottom:0;
-    background:#475D7A;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1000;
-    flex-flow: column;
-    padding:8rem 2rem;
-    width:30rem;
-    text-align: center;
-}
-
-header .logo{
-    text-decoration-line: underline;
-    color:#ffffff;
-    font-size: 3rem;
-    font-weight: bolder;
-}
-
-header .logo span{
-    color:#FF585D;
-}
-
-header .navbar a{
+user agent stylesheet
+body {
     display: block;
-    font-size: 2rem;
-    color:#fff;
-    margin:2rem 0;
+    margin: 8px;
 }
-
-header .navbar a:hover{
-    letter-spacing: .2rem;
-    color:var(--main-color);
+:root {
+    --pink-text: #F26464;
+    --pink-bg: #F26464;
+    --blue-text: #a1cae2;
+    --blue-bg: #e4fbff;
+    --gray-text: #414141;
+    --lightgray-text: #818181;
 }
-
-header .follow a{
-    font-size: 2.5rem;
-    color:#fff;
-    margin:0 .7rem;
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
-
-header .follow a:hover{
-    color:var(--main-color);
+:host, :root {
+    --fa-style-family-classic: "Font Awesome 6 Free";
+    --fa-font-solid: normal 900 1em / 1 "Font Awesome 6 Free";
 }
-
-#menu-bars{
-    position: fixed;
-    top:1rem; right: 1rem;
-    z-index: 10000;
-    background:var(--main-color);
-    color:#fff;
-    border-radius: .5rem;
-    padding:1rem 1.5rem;
-    font-size: 3rem;
-    cursor:pointer;
-    display: none;
+:host, :root {
+    --fa-font-regular: normal 400 1em / 1 "Font Awesome 6 Free";
 }
-
-.btn {
-    width: max-content;
-    display: inline-block;
-    color: var(--color-primary);    
-    padding: 0.75rem 1.2rem;
-    border-radius: 0.4rem;
-    cursor: pointer;
-    border: 1px solid var(--color-primary);
-    transition: var(--transition);
+:host, :root {
+    --fa-style-family-brands: "Font Awesome 6 Brands";
+    --fa-font-brands: normal 400 1em / 1 "Font Awesome 6 Brands";
 }
-
-.btn:hover {
-    background: #ffffff;
-    color: #ffffff;
-    border-color: transparent;
+html {
+    font-family: 'Inter', sans-serif;
+    background-color: #FFF;
 }
-
-.btn-primary {
-    background: var(--color-primary);
-    color: var(--color-bg);
+*, ::after, ::before {
+    box-sizing: border-box;
 }
-
-img{
-    /* display: block; */
-    width: 80%;
-    object-fit: cover;
-    border-radius: 1.2rem;
-    margin-top: 1rem;
-    justify-content: center;
+*, ::after, ::before {
+    box-sizing: border-box;
 }
-
-section {
-    margin-top: 8rem;
-    
-}
-
-section > h2, section > h5{
-    text-align: center;
-    color: var(--color-light);
-}
-
-section > h2 {
-    color: #475D7A;
-    margin-bottom: 3rem;
-    font-size: 3em;
-}
-
-.portfolio__item h4{    
-    margin: 1.2rem 0rem 2rem;
-    font-size: 1.5rem;    
-}
-
-.container {
-    width: var(--container-width-md);
-    grid-template-columns: repeat(3, 1fr);
-    margin: 0 auto;
-}
-
-.portfolio__container {
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem;
-}
-
-.portfolio .content h3{
-    font-size: 3rem;
-    color:#3f3e3e;
-    margin-bottom: 3rem;
-}
-
-.portfolio .content h3 span{
-    color:#FF585D;
-}
-
-.portfolio__container .btn{
-    color:#fbfbfb;
-    box-shadow: inset 0 0 0 1px #ffffff;
-    
-}
-
-.portfolio__container .btn-primary{
-    background:#FF585D;
-}
-
-.portfolio__container .btn:hover{
-    color:#fbfbfb;
-    
-    color: var(--color-black);
-    border-color: transparent;
-}
-
-.portfolio__item {
-    /* background: var(--color-bg-variant); */
-    background: #475D7A;    
-    padding: 1rem;
-    border-radius: 1.5rem;
-    border: 1px solid transparent;
-    box-shadow: inset 0 0 0 1px #444744;
-    transition: var(--transition);
-}
-
-.portfolio__icon{
-    color:#FF585D;
-    font-size: 1.7rem;
-    
-}
-
-.portfolio__item:hov{
-    border-color: var(--color-primary-variant);
-    background: transparent;
-}
-
-.portfolio__item-image {
-    height: 260px;
-    border-radius: 1.5rem;
-    
-    overflow: hidden;        
-}
-
-.follow p {
-        margin-top: 4rem;
-        
-        color: #ffffff;
-    
-}
-
-.portfolio__item h4 {
-    /* margin: 1.2rem 0 2rem; */
-    /* margin-top: 3rem; */
-    /* margin-bottom: 2rem; */
-    color: #ffffff;
-}
-
-.portfolio__item-cta {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1rem;
-}
-
-
-
-@media screen and (max-width: 1024px) {
-    .portfolio__container{
-        grid-template-columns: 1fr 1fr;
-        gap: 1.2rem;        
-    }
-}
-
-@media screen and (max-width: 600px){
-    .portfolio__container{
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-}
-
-
-h1 {
-    font-size: 3em;
-    color: white;
-}
-
-p {
-    font-size: 2em;
-    color: white;
-}
-
-p1 {
-    font-size: 1.5em;
-    font-style: italic;
-    color: white;
-}
-
-li{
-    font-size: 2em;
-}
-
-h2{
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.scrollable-list {
-    height: 200px; /* 원하는 높이로 설정 */
-    overflow-y: scroll; /* 세로 스크롤바를 표시 */
-    border: 1px solid #ccc; /* 경계선 추가 (선택 사항) */
-    padding: 10px; /* 내부 여백 추가 (선택 사항) */
-    background-color: #f9f9f9; /* 배경색 추가 (선택 사항) */
-}
-
-span1{
-    color:grey;
-}
-
-span2{
-    text-align: right;
+::selection {
+    background: #000;
+    text-shadow: none;
+    color: #FFF;
 }
