@@ -521,3 +521,229 @@ body {
         transform: translateY(0);
     }
 }
+/* ===================== Featured Research ===================== */
+.section-lead {
+    max-width: 720px;
+    margin: -1.5rem auto 3.5rem;
+    text-align: center;
+    color: #666;
+    font-size: 1.05rem;
+}
+
+.featured-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4.5rem;
+}
+
+.featured-item {
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.featured-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.featured-item.reverse {
+    grid-template-columns: 1fr 1.15fr;
+}
+
+.featured-item.reverse .featured-figure {
+    order: 2;
+}
+
+.featured-figure {
+    margin: 0;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
+    cursor: zoom-in;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featured-figure:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.14);
+}
+
+.featured-figure img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: contain;
+    background: #fff;
+    padding: 0.75rem;
+}
+
+.featured-figure figcaption {
+    padding: 0.75rem 1rem;
+    font-size: 0.85rem;
+    color: #777;
+    border-top: 1px solid #eee;
+    background: #fafafa;
+}
+
+/* Placeholder shown when a figure file is missing */
+.featured-figure.no-img {
+    cursor: default;
+}
+
+.featured-figure.no-img img {
+    display: none;
+}
+
+.featured-figure.no-img::before {
+    content: "Figure goes here\A" attr(data-file);
+    white-space: pre-wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    aspect-ratio: 16 / 10;
+    padding: 1rem;
+    font-size: 0.85rem;
+    color: #999;
+    background: repeating-linear-gradient(45deg, #f6f6f6, #f6f6f6 12px, #efefef 12px, #efefef 24px);
+}
+
+.featured-tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 0.3rem 0.75rem;
+    border-radius: 999px;
+    margin-bottom: 1rem;
+}
+
+.tag-visual {
+    background: rgba(80, 0, 0, 0.08);
+    color: #500000;
+}
+
+.tag-haptic {
+    background: #e9eef6;
+    color: #24477a;
+}
+
+.featured-text h3 {
+    font-size: 1.35rem;
+    line-height: 1.4;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+}
+
+.featured-venue {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #888;
+    margin-bottom: 1rem;
+}
+
+.featured-text p:not(.featured-venue) {
+    color: #555;
+    line-height: 1.7;
+}
+
+.featured-link {
+    display: inline-block;
+    margin-top: 1.25rem;
+    font-weight: 600;
+    color: #500000;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.featured-link:hover {
+    border-bottom-color: #500000;
+}
+
+/* Lightbox */
+.lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    z-index: 2000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+}
+
+.lightbox.open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.lightbox img {
+    max-width: 92vw;
+    max-height: 82vh;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.lightbox-caption {
+    color: #ddd;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2.5rem;
+    cursor: pointer;
+    line-height: 1;
+}
+
+/* Background tweaks after section order change */
+#publications .publication-item {
+    background: #fff;
+}
+
+#experience .award-item {
+    background: #f8f9fa;
+}
+
+#contact .contact-info {
+    background: #fff;
+}
+
+@media (max-width: 768px) {
+    .featured-item,
+    .featured-item.reverse {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .featured-item.reverse .featured-figure {
+        order: 0;
+    }
+
+    .featured-list {
+        gap: 3rem;
+    }
+
+    .featured-text h3 {
+        font-size: 1.15rem;
+    }
+}
