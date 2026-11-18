@@ -15,6 +15,7 @@
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
                     <li><a href="#research">Research</a></li>
+                    <li><a href="#featured">Featured</a></li>
                     <li><a href="#publications">Publications</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -34,7 +35,6 @@
                 <p class="hero-affiliation">Texas A&M University</p>
                 <div class="hero-contact">
                     <a href="mailto:yeonchae62@tamu.edu" class="contact-link">yeonchae62@tamu.edu</a>
-                    <span class="separator">|</span>
                 </div>
             </div>
         </div>
@@ -78,7 +78,93 @@
         </div>
     </section>
 
-    <section id="publications" class="section">
+    <!-- ============ Featured Research (figure showcase) ============
+         그림 파일을 images/featured/ 폴더에 아래 파일명으로 넣으면 자동으로 표시됩니다.
+         파일이 없으면 자리표시(placeholder)가 보입니다.
+         data-doi 에 DOI 링크를 넣으면 "Read paper" 버튼이 나타납니다. -->
+    <section id="featured" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Research</h2>
+            <p class="section-lead">Selected studies on how visual and haptic feedback can make remote construction operations safer and more intuitive.</p>
+
+            <div class="featured-list">
+
+                <article class="featured-item" data-doi="">
+                    <figure class="featured-figure">
+                        <img src="images/featured/jcem2026_visual_feedback.png"
+                             alt="Context-sensitive visual feedback interface for construction teleoperation"
+                             loading="lazy">
+                        <figcaption>Context-sensitive visual feedback in the teleoperation interface</figcaption>
+                    </figure>
+                    <div class="featured-text">
+                        <span class="featured-tag tag-visual">Visual Feedback</span>
+                        <h3>Context-Sensitive Visual Feedback Strategies for Construction Teleoperation to Enhance Situational Awareness</h3>
+                        <p class="featured-venue">Journal of Construction Engineering and Management · 2026</p>
+                        <p>Examines how visual feedback that adapts to the work context can strengthen operators' situational awareness when controlling equipment remotely.</p>
+                        <a class="featured-link" target="_blank" rel="noopener noreferrer">Read paper →</a>
+                    </div>
+                </article>
+
+                <article class="featured-item reverse" data-doi="">
+                    <figure class="featured-figure">
+                        <img src="images/featured/autcon2026_feedback_to_foresight.png"
+                             alt="Electrotactile and vibrotactile proximity warning framework for excavation"
+                             loading="lazy">
+                        <figcaption>End-to-end electrotactile / vibrotactile proximity warning pipeline</figcaption>
+                    </figure>
+                    <div class="featured-text">
+                        <span class="featured-tag tag-haptic">Haptic Feedback</span>
+                        <h3>From Feedback to Foresight: End-to-End Electrotactile and Vibrotactile Proximity Warning Framework for Excavation Operations</h3>
+                        <p class="featured-venue">Automation in Construction, 191, 107188 · 2026</p>
+                        <p>An end-to-end framework that turns proximity sensing into electrotactile and vibrotactile warnings, helping operators anticipate hazards before contact during excavation.</p>
+                        <a class="featured-link" target="_blank" rel="noopener noreferrer">Read paper →</a>
+                    </div>
+                </article>
+
+                <article class="featured-item" data-doi="">
+                    <figure class="featured-figure">
+                        <img src="images/featured/autcon_preemptive_haptic.png"
+                             alt="Proximity-based preemptive haptic feedback framework for safe excavation"
+                             loading="lazy">
+                        <figcaption>Proximity-based preemptive haptic feedback framework</figcaption>
+                    </figure>
+                    <div class="featured-text">
+                        <span class="featured-tag tag-haptic">Haptic Feedback</span>
+                        <h3>End-to-End Framework for Proximity-Based Preemptive Haptic Feedback in Safe Excavation</h3>
+                        <p class="featured-venue">Automation in Construction, 167, 106961</p>
+                        <p>Delivers haptic cues to the operator ahead of a potential collision, based on the measured proximity between the excavator and nearby hazards.</p>
+                        <a class="featured-link" target="_blank" rel="noopener noreferrer">Read paper →</a>
+                    </div>
+                </article>
+
+                <article class="featured-item reverse" data-doi="">
+                    <figure class="featured-figure">
+                        <img src="images/featured/autcon2024_divergent_effects.png"
+                             alt="Visual interface configurations tested in challenging jobsite environments"
+                             loading="lazy">
+                        <figcaption>Visual interface configurations in challenging jobsite environments</figcaption>
+                    </figure>
+                    <div class="featured-text">
+                        <span class="featured-tag tag-visual">Visual Interface</span>
+                        <h3>Divergent Effects of Visual Interfaces on Teleoperation for Challenging Jobsite Environments</h3>
+                        <p class="featured-venue">Automation in Construction, 167, 105683 · 2024</p>
+                        <p>Compares visual interface configurations under challenging jobsite conditions, showing that their effects on performance and workload differ by environment, with implications for user-centered interface design.</p>
+                        <a class="featured-link" target="_blank" rel="noopener noreferrer">Read paper →</a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox for enlarged figures -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lightbox-close" aria-label="Close">&times;</button>
+        <img src="" alt="">
+        <p class="lightbox-caption"></p>
+    </div>
+
+    <section id="publications" class="section bg-light">
         <div class="container">
             <h2 class="section-title">Selected Publications</h2>
             
@@ -86,14 +172,12 @@
                 <h3 class="category-title">Journal Articles</h3>
                 <div class="publication-list">
                     <div class="publication-item">
-                        <p class="pub-title">Context-Sensitive Visual Feedback Strategies for Construction
-Teleoperation to Enhance Situational Awareness</p>
+                        <p class="pub-title">Context-Sensitive Visual Feedback Strategies for Construction Teleoperation to Enhance Situational Awareness</p>
                         <p class="pub-authors"><strong>Chae, Y.</strong>, Gupta, S. & Ham, Y.</p>
                         <p class="pub-venue">Journal of Construction Engineering and Management (2026)</p>
                     </div>
                     <div class="publication-item">
-                        <p class="pub-title">From Feedback to Foresight: End-to-End Elec-
-trotactile and Vibrotactile Proximity Warning Framework for Excavation Operations</p>
+                        <p class="pub-title">From Feedback to Foresight: End-to-End Electrotactile and Vibrotactile Proximity Warning Framework for Excavation Operations</p>
                         <p class="pub-authors"><strong>Chae, Y.</strong>, Arabi, A., Kim, J. & Ham, Y.</p>
                         <p class="pub-venue">Automation in Construction, 191, 107188 (2026)</p>
                     </div>
@@ -119,7 +203,7 @@ trotactile and Vibrotactile Proximity Warning Framework for Excavation Operation
                 <h3 class="category-title">Conference Papers</h3>
                 <div class="publication-list">
                     <div class="publication-item">
-                        <p class="pub-title">Effect of Visual Prompts according to the environment in Heavy Machinery Teleportation</p>
+                        <p class="pub-title">Effects of Visual Prompts in Human-machine Interface for Construction Teleoperation System</p>
                         <p class="pub-authors"><strong>Chae, Y.</strong>, Gupta, S., Ham, Y.</p>
                         <p class="pub-venue">ISARC 2024 - International Symposium on Automation and Robotics in Construction</p>
                     </div>
@@ -138,7 +222,7 @@ trotactile and Vibrotactile Proximity Warning Framework for Excavation Operation
         </div>
     </section>
 
-    <section id="experience" class="section bg-light">
+    <section id="experience" class="section">
         <div class="container">
             <h2 class="section-title">Experience</h2>
             
@@ -224,7 +308,7 @@ trotactile and Vibrotactile Proximity Warning Framework for Excavation Operation
         </div>
     </section>
 
-    <section id="contact" class="section">
+    <section id="contact" class="section bg-light">
         <div class="container">
             <h2 class="section-title">Contact</h2>
             <div class="contact-content">
@@ -244,7 +328,7 @@ trotactile and Vibrotactile Proximity Warning Framework for Excavation Operation
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Yeon Chae. All rights reserved.</p>
+            <p>&copy; 2026 Yeon Chae. All rights reserved.</p>
         </div>
     </footer>
 
@@ -274,6 +358,51 @@ trotactile and Vibrotactile Proximity Warning Framework for Excavation Operation
                 navbar.style.boxShadow = '0 2px 5px rgba(0,0,0,0.05)';
             }
         });
+        // Featured research: placeholder when a figure file is missing
+        document.querySelectorAll('.featured-figure img').forEach(img => {
+            const markMissing = () => {
+                const fig = img.closest('.featured-figure');
+                fig.classList.add('no-img');
+                fig.setAttribute('data-file', img.getAttribute('src'));
+            };
+            img.addEventListener('error', markMissing);
+            if (img.complete && img.naturalWidth === 0) markMissing();
+        });
+
+        // Featured research: show "Read paper" only when a DOI/URL is set
+        document.querySelectorAll('.featured-item').forEach(item => {
+            const link = item.querySelector('.featured-link');
+            const url = (item.dataset.doi || '').trim();
+            if (url) { link.href = url; } else { link.style.display = 'none'; }
+        });
+
+        // Lightbox: click a figure to enlarge
+        const lightbox = document.getElementById('lightbox');
+        const lbImg = lightbox.querySelector('img');
+        const lbCap = lightbox.querySelector('.lightbox-caption');
+        document.querySelectorAll('.featured-figure').forEach(fig => {
+            fig.addEventListener('click', () => {
+                if (fig.classList.contains('no-img')) return;
+                const img = fig.querySelector('img');
+                lbImg.src = img.src;
+                lbImg.alt = img.alt;
+                lbCap.textContent = fig.querySelector('figcaption')?.textContent || '';
+                lightbox.classList.add('open');
+                lightbox.setAttribute('aria-hidden', 'false');
+            });
+        });
+        const closeLightbox = () => {
+            lightbox.classList.remove('open');
+            lightbox.setAttribute('aria-hidden', 'true');
+        };
+        lightbox.addEventListener('click', e => { if (e.target !== lbImg) closeLightbox(); });
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+        // Fade-in featured items on scroll
+        const io = new IntersectionObserver(entries => {
+            entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add('visible'); io.unobserve(en.target); } });
+        }, { threshold: 0.15 });
+        document.querySelectorAll('.featured-item').forEach(el => io.observe(el));
     </script>
 </body>
 </html>
