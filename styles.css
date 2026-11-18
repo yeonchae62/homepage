@@ -716,15 +716,13 @@ body {
 }
 
 /* Background tweaks after section order change */
-#publications .publication-item {
-    background: #fff;
-}
-
-#experience .award-item {
+#research .research-card {
     background: #f8f9fa;
+    box-shadow: none;
+    border: 1px solid #eee;
 }
 
-#contact .contact-info {
+.featured-figure img {
     background: #fff;
 }
 
@@ -745,5 +743,160 @@ body {
 
     .featured-text h3 {
         font-size: 1.15rem;
+    }
+}
+
+/* ===================== Compact intro (replaces big hero) ===================== */
+.intro {
+    padding: 110px 0 3.5rem;
+    background: linear-gradient(135deg, #500000 0%, #800000 100%);
+    color: #fff;
+}
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 3.5rem;
+    align-items: center;
+}
+
+.intro-profile {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.intro .profile-photo {
+    width: 120px;
+    height: 120px;
+    margin: 0;
+    border-width: 3px;
+    flex-shrink: 0;
+}
+
+.intro-name {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+}
+
+.intro-role,
+.intro-affiliation {
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+.intro-email {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.intro-email:hover {
+    border-bottom-color: #fff;
+}
+
+.intro-about {
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    padding-left: 3.5rem;
+    font-size: 1.05rem;
+    line-height: 1.75;
+}
+
+.intro-about a {
+    color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.intro-about strong {
+    font-weight: 600;
+}
+
+.intro-edu {
+    margin-top: 0.9rem;
+    font-size: 0.88rem;
+    opacity: 0.8;
+}
+
+/* Tighter section spacing now that the page leads with content */
+.section {
+    padding: 4rem 0;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+@media (max-width: 900px) {
+    .intro-grid {
+        grid-template-columns: 1fr;
+        gap: 1.75rem;
+    }
+
+    .intro-about {
+        border-left: none;
+        padding-left: 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        padding-top: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro .profile-photo {
+        width: 88px;
+        height: 88px;
+    }
+
+    .intro-name {
+        font-size: 1.6rem;
+    }
+}
+
+/* Research Areas: 4 compact cards in one row */
+.research-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+    margin-top: 0;
+}
+
+#research .research-card {
+    padding: 1.5rem;
+}
+
+#research .research-icon {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+#research .research-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+}
+
+#research .research-card p {
+    font-size: 0.92rem;
+}
+
+@media (max-width: 1000px) {
+    .research-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .intro {
+        padding-top: 150px;
+    }
+}
+
+@media (max-width: 560px) {
+    .research-grid {
+        grid-template-columns: 1fr;
     }
 }
